@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  
+  environment {
+    registry = 'ninoniauri/task'
+  }
   stages {
     stage('Checkout') {
       steps {
@@ -25,3 +29,6 @@ pipeline {
     registry = 'ninoniauri/task'
   }
 }
+
+
+
