@@ -22,7 +22,8 @@ pipeline {
     stage('Test') {
       steps {
         script {
-          print ('hello')
+          sh 'chmod +x ./scripts/test.sh'
+          sh './scripts/test.sh'
         }
 
       }
