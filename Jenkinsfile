@@ -1,9 +1,10 @@
 pipeline {
   agent any
   
-  environment {
-    registry = 'ninoniauri/task'
-  }
+    environment {
+        PATH = "${PATH}:/opt/homebrew/bin/npm"
+    }
+    
   stages {
     stage('Checkout') {
       steps {
