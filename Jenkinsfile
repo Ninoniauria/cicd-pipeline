@@ -24,7 +24,7 @@ pipeline {
   }
   environment {
     registry = 'ninoniauri/task'
-    PATH = "${PATH}:/opt/homebrew/bin/npm"
+    PATH = "${PATH}:/opt/homebrew/bin"
 
   }
 }
