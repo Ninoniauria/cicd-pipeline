@@ -14,17 +14,16 @@ pipeline {
       steps {
         script {
           sh 'chmod +x ./scripts/build.sh'
-          sh './scripts/build.sh'
         }
 
       }
     }
 
   }
+  tools {
+    nodejs 'nodejs'
+  }
   environment {
     registry = 'ninoniauri/task'
-  }
-  tools {
-    nodejs "nodejs"
   }
 }
