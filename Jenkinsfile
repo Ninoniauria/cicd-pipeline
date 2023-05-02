@@ -19,6 +19,15 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        script {
+          print ('hello')
+        }
+
+      }
+    }
+
   }
   tools {
     nodejs 'nodejs'
