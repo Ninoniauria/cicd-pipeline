@@ -24,4 +24,7 @@ pipeline {
   environment {
     registry = 'ninoniauri/task'
   }
+  tools {
+    nodejs "nodejs"
+  }
 }
