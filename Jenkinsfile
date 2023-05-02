@@ -10,6 +10,16 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        script {
+          sh 'cat ./scripts/build.sh'
+          sh './scripts/build.sh'
+        }
+
+      }
+    }
+
   }
   environment {
     registry = 'ninoniauri/task'
