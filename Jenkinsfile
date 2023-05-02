@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Checkout') {
       steps {
         script {
-          print ('hello world')
+          checkout scm
         }
 
       }
