@@ -34,7 +34,7 @@ pipeline {
     stage('Docker Image Build') {
       steps {
         script {
-          sh "docker build . -t mybuildimage"
+          sh 'export PATH=/usr/local/bin:$PATH && docker build -t myimage .'
         }
 
       }
