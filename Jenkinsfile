@@ -31,6 +31,15 @@ pipeline {
       }
     }
 
+    stage('Docker Image Build') {
+      steps {
+        script {
+          sh "docker build . -t mybuildimage"
+        }
+
+      }
+    }
+
   }
   tools {
     nodejs 'nodejs'
