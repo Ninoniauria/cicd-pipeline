@@ -23,7 +23,7 @@ pipeline {
       steps {
         script {
           sh 'chmod +x ./scripts/test.sh'
-          sh './scripts/test.sh'
+          sh 'export PATH=/opt/homebrew/bin:$PATH && ./scripts/test.sh'
         }
 
       }
