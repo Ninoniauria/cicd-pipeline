@@ -14,6 +14,8 @@ pipeline {
       steps {
         script {
           sh 'chmod +x ./scripts/build.sh'
+
+          sh 'export PATH=/opt/homebrew/bin:$PATH && ./scripts/build.sh'
         }
 
       }
